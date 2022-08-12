@@ -8,6 +8,7 @@
 
 struct DijkstraGraph
 {
+	DijkstraGraph(int vex, int arc, int* vexs, int** arcs);
 	int vex_num; // 图中顶点数量
 	int arc_num; // 图中边数量
 	VertexType vexs[MAX_VERTEX_NUM]; // 一维数组存储图中顶点

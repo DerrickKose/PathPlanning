@@ -16,23 +16,14 @@ int main()
 					  { 8, 3, INFINITE, INFINITE, INFINITE, INFINITE, 6, INFINITE, 1 },
 					  { INFINITE, INFINITE, 2, INFINITE, INFINITE, INFINITE, 6, 1, INFINITE }};
 
-	DijkstraGraph* Graph = new DijkstraGraph;
-	Graph->vex_num = Input_vex_num;
-	Graph->arc_num = 14;
-	
-	for (int i = 0; i < Graph->vex_num; i++)
-	{
-		Graph->vexs[i] = Input_vexs[i];
-		for (int j = 0; j < Graph->vex_num; j++)
-		{
-			Graph->arcs[i][j] = Input_arcs[i][j];
-		}
-	}
+
+	DijkstraGraph* Graph = new DijkstraGraph(Input_vex_num, Input_arc_num, Input_vexs, (int**) Input_arcs);
 
 	Dijkstra D0(*Graph);
 	D0.PrintPath(*Graph);
 
 	delete	Graph;
+
 	std::cin.get();
 	return 0;
 }
