@@ -24,12 +24,18 @@
     <ClCompile Include="AntColonyOptimization.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PlotEasyX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dijkstra.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AntColonyOptimization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlotEasyX.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

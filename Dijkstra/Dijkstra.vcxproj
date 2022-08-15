@@ -142,11 +142,13 @@
   <ItemGroup>
     <ClCompile Include="AntColonyOptimization.cpp" />
     <ClCompile Include="Dijkstra.cpp" />
+    <ClCompile Include="PlotEasyX.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AntColonyOptimization.h" />
     <ClInclude Include="Dijkstra.h" />
+    <ClInclude Include="PlotEasyX.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

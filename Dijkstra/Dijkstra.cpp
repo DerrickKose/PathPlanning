@@ -121,10 +121,9 @@ DijkstraGraph::DijkstraGraph(int Invex, int Inarc, int* Invexs, int** Inarcs)
 	this->vex_num = Invex;
 	this->arc_num = Inarc;
 
-	for (int i = 0; i < this->vex_num; i++)
+	for (int i = 0; i < this->vex_num; i++, Invexs++)
 	{
 		this->vexs[i] = *Invexs;
-		Invexs++;
 		for (int j = 0; j < this->vex_num; j++)
 		{
 			this->arcs[i][j] = *((int*) Inarcs + i * Invex + j);
